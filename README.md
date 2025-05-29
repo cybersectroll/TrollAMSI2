@@ -9,7 +9,7 @@ Add-Type -TypeDefinition $code -ReferencedAssemblies "C:\0Harmony.dll"
 [TrollAmsi2]::SmokeOut()
 ```
 
-## MIT License
+## MIT License for HarmonyLib
 MIT License
 
 Copyright (c) 2017 Andreas Pardeike
