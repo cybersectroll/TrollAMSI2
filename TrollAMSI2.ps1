@@ -28,7 +28,7 @@ using System.Management.Automation;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-public static class TrollAMSI3
+public static class TrollAMSI2
 {
     [DllImport("kernel32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]
