@@ -1,7 +1,7 @@
 # TrollAmsi2
-Bypass powershell amsi 
-Both files are 0/72 on virus total.
-If you are concerned with dropping on disk, ofcourse you can use reflectively load
+Bypass powershell amsi \
+Both files are 0/72 on virus total and clean on hybrid-analysis \
+If you are concerned with dropping on disk, ofcourse you can reflectively load
   
 ## Usage 
 ```
