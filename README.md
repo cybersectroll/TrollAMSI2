@@ -1,15 +1,15 @@
 # TrollAmsi2
-Bypass powershell amsi by "byte patching" the init method -> basically break it. \
-Afterwhich, we manually call UnInit and when it retries to re-Init properly, it fails \
+Bypass powershell amsi by "byte patching" the init method -> basically break it. <br>
+Afterwhich, we manually call UnInit and when it retries to re-Init properly, it fails <br>
 
 **DLL Method**
-- This is the preferred method which uses HarmonyLib \
-- compile TrollAmsi2.cs into a .dll and use with 0Harmony.dll (Both are 0/72 on virus total and clean on hybrid-analysis) \
-- If you are concerned with dropping on disk, ofcourse you can reflectively load\
+- This is the preferred method which uses HarmonyLib 
+- compile TrollAmsi2.cs into a .dll and use with 0Harmony.dll (Both are 0/72 on virus total and clean on hybrid-analysis) 
+- If you are concerned with dropping on disk, ofcourse you can reflectively load 
 
 **powershell one liner**
-- Use trollamsi2.ps1 \
-- Not as stealthy as TrollAMSI due to the use of VirtualProtect which gets flagged by some AV/EDRs during the $lib add-type \
+- Use trollamsi2.ps1 
+- Not as stealthy as TrollAMSI due to the use of VirtualProtect which gets flagged by some AV/EDRs during the $lib add-type 
   
 ## Usage 
 ```
