@@ -6,7 +6,7 @@ using HarmonyLib;
 
 public class TrollAmsi2
 {
-    public static void Start()
+    public static void SmokeOut()
     {
         var harmony = new Harmony(" ");
 
