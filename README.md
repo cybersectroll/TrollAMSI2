@@ -1,9 +1,9 @@
-# TrollAmsi2
+## TrolAMSI2
 Bypass powershell amsi by "byte patching" the init method -> basically break it. <br>
 Afterwhich, we manually call UnInit and when it retries to re-Init properly, it fails <br>
 Patches JIT code so slightly more stealthy than patching amsi.dll BUT uses the same patching techniques which may get flagged (eg. virtualprotect) <br>
 
-**DLL Method (uses uses HarmonyLib )**
+**DLL Method (uses HarmonyLib )**
 - TrollAmsi2.cs -> compile into a .dll and use with 0Harmony.dll
 -  Both dll are 0/72 on virus total and clean on hybrid-analysis
 - If you are concerned with dropping on disk, ofcourse you can reflectively load 
